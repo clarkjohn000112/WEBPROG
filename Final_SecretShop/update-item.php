@@ -22,9 +22,6 @@
                             header("location:".SITEURL.'/manage-item.php');
                         }
         
-                    
-                
-           
         ?>
 
 <div class="container">

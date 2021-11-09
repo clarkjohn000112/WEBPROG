@@ -8,6 +8,29 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+.food-menu{
+  background-color: #ececec;
+  padding: 4% 0;
+}
+.food-menu-box{
+  width: 46%;
+  margin: 1%;
+  padding: 1%;
+  float: left;
+  background-color: lightskyblue;
+  border-radius: 15px;
+}
+
+.food-menu-img{
+  width: 20%;
+  float: left;
+}
+
+.food-menu-desc{
+  width: 70%;
+  float: left;
+  margin-left: 8%;
+}
 
 body{
   background: #e8edf5;

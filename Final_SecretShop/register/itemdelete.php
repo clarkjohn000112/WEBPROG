@@ -7,10 +7,11 @@ $sql = "DELETE FROM item where id=$id";
 $res = mysqli_query($conn, $sql);
 
 if($res==TRUE){
-    echo "food DELETED";
+    $_SESSION['delete-success']="<div class='error'>item successfully deleted</div>";
     header("location:".SITEURL.'/register/itemmanage.php');
 }
 else{
-    echo "ITEM FAILED TO DELETE";
+    $_SESSION['delete-failed']="<div class='error'>item failed to delete</div>";
+    header("location:".SITEURL.'/register/itemmanage.php');
 }
 ?>

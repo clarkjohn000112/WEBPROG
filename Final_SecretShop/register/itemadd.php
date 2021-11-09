@@ -62,25 +62,25 @@
 	        	
 	        	<ul>
 		          <li>
-		            <a href="adminmanage.php"  class="active">
+		            <a href="adminmanage.php">
 		              <span class="icon">
 		              <span class="list">Admin</span>
 		            </a>
 		          </li>
 		          <li>
-		            <a href="../manage-brand.php">
+		            <a href="brandmanage.php">
 		              <span class="list">Brands</span>
 		            </a>
 		          </li>
 		          
 		          <li>
-		            <a href="../manage-item.php">
+		            <a href="itemmanage.php"  class="active">
 		              <span class="list">Items</span>
 		            </a>
 		          </li>
 
                   <li>
-		            <a href="../manage-order.php" >
+		            <a href="ordermanage.php" >
 		             
 		              <span class="list">Order</span>
 		            </a>
@@ -248,11 +248,13 @@
         $res=mysqli_query($conn,$sql);
          
          if($res==TRUE){
+			$_SESSION['add-success']="<div class='error'>item successfully added</div>";
             echo '<script type="text/javascript">
 				location.replace("itemmanage.php");
 			  </script>';
         }
         else{
+			$_SESSION['add-failed']="<div class='error'>item failed to add</div>";
             echo '<script type="text/javascript">
             location.replace("itemmanage.php");
           </script>';
