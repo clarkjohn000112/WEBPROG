@@ -50,7 +50,7 @@
     {
         $username=$_POST['username'];
         $password=md5($_POST['password']);
-        $sql = "SELECT * FROM tbl_admin where username='$username' AND password='$password'";
+        $sql = "SELECT * FROM admin where username='$username' AND password='$password'";
         $res=mysqli_query($conn, $sql);
         $count=mysqli_num_rows($res);
         if($count==1){
@@ -72,7 +72,7 @@
     {
         $username1=$_POST['username'];
         $password1=md5($_POST['password']);
-        $sql1 = "SELECT * FROM tbl_user where username='$username1' AND password='$password1'";
+        $sql1 = "SELECT * FROM user where username='$username1' AND password='$password1'";
         $res1=mysqli_query($conn, $sql1);
         $count1=mysqli_num_rows($res1);
         if($count1==1){

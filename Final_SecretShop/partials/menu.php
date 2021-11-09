@@ -15,7 +15,7 @@
 			<ul>
 			
 			<li><a href="manage-admin.php">Admin</a></li>
-			<li><a href="manage-category.php">Category</a></li>
+			<li><a href="manage-brand.php">Brand</a></li>
 			<li><a href="manage-item.php">Item</a></li>
 			<li><a href="manage-order.php">Order</a></li>
 			<li><a href="../login.php">Logout</a></li>
