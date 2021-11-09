@@ -1,4 +1,4 @@
-<?php include ('partials/menu.php')?>
+<!-- <?php include ('partials/menu.php')?> -->
 <link rel="stylesheet" type="text/css" href="style.css">
 
 
@@ -11,7 +11,19 @@
 				 unset($_SESSION['add']);
 			 } 
 	   ?><br><br><br><br>
-        <a href="add-admin.php" class="btn-primary">ADD ADMIN</a><br><br><br><br>
+<head>
+<link rel="stylesheet" type="text/css" href="../partials/styles.css">
+	<script>
+$(document).ready(function() {
+       $("#addadmin").click(function(){
+		   $("#containershow").load("../add-admin.php")
+          });
+	      
+});
+</script>
+</head>
+<body>
+        <a class="btn-primary" id = "addadmin">ADD ADMIN</a><br><br><br><br>
         <div style="overflow-x:auto;">
 			<table>
 				<tr>
@@ -59,3 +71,4 @@
 			
 	</div>
 	<?php include ('partials/footer.php')?>
+</body>

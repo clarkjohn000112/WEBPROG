@@ -1,4 +1,4 @@
-<?php include ('partials/menu.php')?>
+ <?php include ('partials/menu.php')?>
 <link rel="stylesheet" type="text/css" href="style.css">
 	<div class="container">
 	
@@ -94,18 +94,18 @@
   
         if(mysqli_num_rows($res1)>0)
         {   
+            var_dump($res1);
             $_SESSION['add'] = "CATEGORY ALREADY EXIST";
             header("location:".SITEURL.'/add-brand.php');
         }
         else
         {
-
-        $sql = "INSERT INTO brand (title,featured,active,images_name)
-        values ('$title','$featured','$active','$location')";
+   
+        $sql = "INSERT INTO brand (images_name,title,featured,active) values ('$location','$title','$featured','$active')";
         $res=mysqli_query($conn,$sql);
          
          if($res==TRUE){
-            header("location:".SITEURL.'/manage-brand.php');
+            header("location:".SITEURL.'/adminIndex.php');
         }
         else{
             header("location:".SITEURL.'/add-brand.php');

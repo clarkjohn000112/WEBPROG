@@ -1,4 +1,4 @@
-<?php include ('partials/menu.php')?>
+<?php include("partials/connection.php")?>
 <link rel="stylesheet" type="text/css" href="style.css">
  <div class="container">
 
@@ -10,10 +10,20 @@
 			 } 
 	   ?><br><br><br><br>
 
-           
+<head>
+<link rel="stylesheet" type="text/css" href="../partials/styles.css">
+	<script>
+$(document).ready(function() {
+       $("#addbrand").click(function(){
+		   $("#containershow").load("../add-brand.php")
+          });
+	      
+});
+</script>
+</head>         
 
-
-        <a href="add-brand.php" class="btn-primary">ADD BRAND</a><br><br><br><br>
+<body>
+        <a class="btn-primary"id = "addbrand">ADD BRAND</a><br><br><br><br>
        
         <table>
 				<tr>
@@ -67,3 +77,4 @@
 
 	</div>
 	<?php include ('partials/footer.php')?><br>
+</body>

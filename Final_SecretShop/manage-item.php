@@ -1,6 +1,6 @@
 
 
-<?php include ('partials/menu.php')?>
+<!-- <?php include ('partials/menu.php')?> -->
 <link rel="stylesheet" type="text/css" href="style.css">
 	<div class="container">
 
