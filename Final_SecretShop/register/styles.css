@@ -154,7 +154,7 @@ body{
 .main_body .container{
   width: calc(100% - 250px);
   margin-top: 65px;
-  margin-left: 250px;
+  margin-left: 280px;
   padding: 25px 40px;
   transition: all 0.3s linear;
 }
@@ -186,6 +186,7 @@ body{
 
 .main_body .container .item_wrap .items:first-child{
   margin-right: 0px;
+  padding: 1%;
 }
 
 /* after adding active class */

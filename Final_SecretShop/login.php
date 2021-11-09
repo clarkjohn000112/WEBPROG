@@ -1,5 +1,6 @@
 
-<?php include ('connection.php')?>
+<?php include ('partials/connection.php')?>
+<link rel="stylesheet" type="text/css" href="style.css">
 <html>
     <head>
         <title>LOGIN </title>
@@ -55,9 +56,7 @@
         $count=mysqli_num_rows($res);
         if($count==1){
             $_SESSION['user']= $username;
-            header("location:".SITEURL.'/admin/manage-admin.php');
-          
-          
+            header("location:".SITEURL.'/register/adminmanage.php');
         }
         else{
             $_SESSION['login'] = "<div class='error text-center'> Username or Password did not match.</div>";
