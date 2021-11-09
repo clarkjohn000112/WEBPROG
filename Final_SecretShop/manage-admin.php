@@ -1,5 +1,5 @@
 <?php include ('partials/menu.php')?>
-
+<link rel="stylesheet" type="text/css" href="style.css">
 
 
         <div class="container">
@@ -39,8 +39,8 @@
 					<td><?php echo $name;?></td>
 					<td><?php echo $username;?></td>
 					<td>
-                    <a href="<?php echo SITEURL;?>/admin/update-admin.php?id=<?php echo $id;?>" class="btn-primary">Edit admin</a>
-                    <a href="<?php echo SITEURL;?>/admin/delete-admin.php?id=<?php echo $id;?>" class="btn-primary">Delete admin</a>
+                    <a href="<?php echo SITEURL;?>/update-admin.php?id=<?php echo $id;?>" class="btn-primary">Edit admin</a>
+                    <a href="<?php echo SITEURL;?>/delete-admin.php?id=<?php echo $id;?>" class="btn-primary">Delete admin</a>
 					
                     </td>
 				</tr>

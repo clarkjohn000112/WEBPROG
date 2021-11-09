@@ -1,7 +1,7 @@
 <?php 
 session_start();
-define('SITEURL', 'http://localhost/secret_shop');
-define('SITEURL1', 'http://localhost/secret_shop/');
+define('SITEURL', 'http://localhost/final_secretshop');
+define('SITEURL1', 'http://localhost/final_secretshop/');
 define('LOCALHOST','localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');

@@ -1,5 +1,5 @@
 <?php include('partials/menu.php');?>
-
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <div class="container">
 
@@ -52,11 +52,11 @@
             if($res==TRUE){
                 echo "DATA INSERTED";
                 $_SESSION['add'] = "DATA INSERTED";
-                header("location:".SITEURL.'/admin/manage-admin.php');
+                header("location:".SITEURL.'/manage-admin.php');
             }
             else{
                 $_SESSION['add'] = "FAILED TO INSERT";
-                header("location:".SITEURL.'/admin/add-admin.php');
+                header("location:".SITEURL.'/add-admin.php');
             }
         }
     }

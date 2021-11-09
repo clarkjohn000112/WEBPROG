@@ -5,7 +5,7 @@
 <html>
 <head>
 	<title>Casin Magsino Food Order System</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 	<body>
 	<br><br><br><br>
@@ -16,9 +16,9 @@
 			
 			<li><a href="manage-admin.php">Admin</a></li>
 			<li><a href="manage-category.php">Category</a></li>
-			<li><a href="manage-food.php">Food</a></li>
+			<li><a href="manage-item.php">Item</a></li>
 			<li><a href="manage-order.php">Order</a></li>
-			<li><a href="../admin/login.php">Logout</a></li>
+			<li><a href="../login.php">Logout</a></li>
 			</ul>
 		</div>
 </div>
