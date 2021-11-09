@@ -1,4 +1,4 @@
-<?php include('partials/menu.php');?>
+vs<?php include('partials/menu.php');?>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <div class="container">
